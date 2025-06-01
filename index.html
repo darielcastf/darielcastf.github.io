@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <h1 class="title"">Formulario De Contacto</h1>
+    <p>Enviar un correo electronico. Todos los campos con el asterico (*) son obligatorios.</p>
+    <form action="" class="form">
+          <div class="form-group">
+            <label for="nombre">Nombre*</label>
+            <label for="email">Correo Electronico*</label>
+            <label for="asunto">Asunto*</label>
+
+          </div>
+
+          <div class="form-inputs">
+            <input type="text" required minlength="3" maxlength="20" name="name">
+            <input type="email" required id="email" name="email">
+            <input type="asunto" required minlength="5" maxlength="50" name="asunto">
+
+          </div>
+          <div class="mensaje">
+            <label for="mensaje">Mensaje*</label>
+          </div>
+            <textarea required class='mensaje-input'name="mensaje"></textarea><br>
+
+          <button type="submit">Enviar</button>
+</body>
+
+</html>
